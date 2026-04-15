@@ -18,6 +18,8 @@ arquitetura.
 ------------------------------------------------------------------------
 
 ## 📂 Estrutura do projeto
+    docs/
+     └── report.png
 
     src/
      ├── app.js
@@ -32,9 +34,14 @@ arquitetura.
      │    └── treinos.validation.js
      └── config/
           └── swagger.js
-
+          
     tests/
      └── treino.js
+
+     
+    
+
+     
 
 ------------------------------------------------------------------------
 
@@ -134,6 +141,12 @@ Cria um novo treino de corrida.
 -   Arredondamento para 2 casas decimais
 -   Identificador incremental
 -   Data de criação automática
+
+------------------------------------------------------------------------
+
+## 📊 Relatório de Testes
+
+![Relatório Mochawesome](./docs/report.png)
 
 ------------------------------------------------------------------------
 
