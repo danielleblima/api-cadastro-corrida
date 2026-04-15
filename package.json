@@ -1,0 +1,22 @@
+{
+  "name": "api-cadastro-corrida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4"
+  },
+  "dependencies": {
+    "chai": "^6.2.2",
+    "express": "^5.2.1",
+    "supertest": "^7.2.2"
+  }
+}
