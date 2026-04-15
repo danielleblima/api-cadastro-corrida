@@ -1,15 +1,16 @@
+const { validarTreino } = require('../validations/treinos.validation');
 const { criarTreino } = require('../services/treinos.service');
 
 function cadastrarTreino(req, res) {
-  const resultado = criarTreino(req.body);
+  const erro = validarTreino(req.body);
 
-  if (resultado.erro) {
-    return res.status(400).json({ erro: resultado.erro });
+  if (erro) {
+    return res.status(400).json(erro);
   }
 
-  return res.status(201).json(resultado);
+  const treino = criarTreino(req.body);
+
+  return res.status(201).json(treino);
 }
 
-module.exports = {
-  cadastrarTreino
-};
+module.exports = { cadastrarTreino };

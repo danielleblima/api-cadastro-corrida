@@ -1,35 +1,19 @@
-const {
-  validarCamposObrigatorios,
-  validarDistancia,
-  validarTempo,
-  validarTipo,
-  validarData
-} = require('../validations/treinos.validation');
-
 let treinos = [];
 let idAtual = 1;
 
-function criarTreino(dados) {
-  const erroCampos = validarCamposObrigatorios(dados);
-  if (erroCampos) return { erro: erroCampos };
+function criarTreino(data) {
+  const { data: dataTreino, distanciaKm, tempoMin, tipo, intensidade, observacao } = data;
 
-  const erroDistancia = validarDistancia(dados.distanciaKm);
-  if (erroDistancia) return { erro: erroDistancia };
-
-  const erroTempo = validarTempo(dados.tempoMin);
-  if (erroTempo) return { erro: erroTempo };
-
-  const erroTipo = validarTipo(dados.tipo);
-  if (erroTipo) return { erro: erroTipo };
-
-  const erroData = validarData(dados.data);
-  if (erroData) return { erro: erroData };
-
-  const ritmoMinPorKm = Number((dados.tempoMin / dados.distanciaKm).toFixed(2));
+  const ritmoMinPorKm = Number((tempoMin / distanciaKm).toFixed(2));
 
   const treino = {
     id: idAtual++,
-    ...dados,
+    data: dataTreino,
+    distanciaKm,
+    tempoMin,
+    tipo,
+    intensidade,
+    observacao,
     ritmoMinPorKm,
     createdAt: new Date().toISOString()
   };
@@ -39,6 +23,4 @@ function criarTreino(dados) {
   return treino;
 }
 
-module.exports = {
-  criarTreino
-};
+module.exports = { criarTreino };
