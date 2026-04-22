@@ -1,4 +1,4 @@
-# 🏃‍♀️ API Cadastro de Treinos de Corrida
+# API Cadastro de Treinos de Corrida
 
 API REST desenvolvida com Node.js e Express para cadastro de treinos de
 corrida, com foco em qualidade, testes automatizados e boas práticas de
@@ -6,7 +6,7 @@ arquitetura.
 
 ------------------------------------------------------------------------
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 -   Node.js
 -   Express
@@ -17,7 +17,7 @@ arquitetura.
 
 ------------------------------------------------------------------------
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
     docs/
      └── report.png
 
@@ -45,7 +45,7 @@ arquitetura.
 
 ------------------------------------------------------------------------
 
-## 🎯 Objetivo
+## Objetivo
 
 Construir uma API aplicando:
 
@@ -57,7 +57,7 @@ Construir uma API aplicando:
 
 ------------------------------------------------------------------------
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 ### 1. Clonar o repositório
 
@@ -94,7 +94,7 @@ Permite testar os endpoints diretamente pelo navegador.
 
 ------------------------------------------------------------------------
 
-## 🧪 Executar testes
+## Executar testes
 
 ``` bash
 npx mocha tests
@@ -102,7 +102,7 @@ npx mocha tests
 
 ------------------------------------------------------------------------
 
-## 📌 Endpoint principal
+## Endpoint principal
 
 ### POST /treinos
 
@@ -123,7 +123,7 @@ Cria um novo treino de corrida.
 
 ------------------------------------------------------------------------
 
-## ✅ Validações implementadas
+## Validações implementadas
 
 -   Campos obrigatórios
 -   Payload vazio
@@ -135,7 +135,7 @@ Cria um novo treino de corrida.
 
 ------------------------------------------------------------------------
 
-## 🧠 Regras de negócio
+## Regras de negócio
 
 -   Cálculo automático do ritmo (`min/km`)
 -   Arredondamento para 2 casas decimais
@@ -144,13 +144,13 @@ Cria um novo treino de corrida.
 
 ------------------------------------------------------------------------
 
-## 📊 Relatório de Testes
+## Relatório de Testes
 
 ![Relatório Mochawesome](./docs/report.png)
 
 ------------------------------------------------------------------------
 
-## 🧪 Estratégia de testes
+## Estratégia de testes
 
 Testes automatizados cobrindo:
 
@@ -161,7 +161,7 @@ Testes automatizados cobrindo:
 
 ------------------------------------------------------------------------
 
-## 🔄 Melhorias futuras
+## Melhorias futuras
 
 -   Persistência em banco de dados
 -   Autenticação (JWT)
@@ -171,13 +171,13 @@ Testes automatizados cobrindo:
 
 ------------------------------------------------------------------------
 
-## 👩‍💻 Autora
+## Autora
 
 Danielle Lima
 
 ------------------------------------------------------------------------
 
-## 📌 Observação
+## Observação
 
 Este projeto foi desenvolvido com foco em prática de QA, testes
 automatizados e arquitetura backend.
